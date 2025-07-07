@@ -1,258 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>行程介紹</title>
-    <link rel="stylesheet" href="CSS/title.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>行程介紹</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/title.css">
 </head>
 
 <body>
-    <header>
-        <h1>歡迎來到 Travel 旅遊網</h1>
-        <p>您的夢想假期從這裡開始</p>
-    </header>
-    <nav>
-        <a href="index.html">首頁</a>
-        <a href="Link.html">行程介紹</a>
-        <a href="Hot.html">熱門景點</a>
-        <a href="#">自由行</a>
-        <a href="#">聯絡我們</a>
-    </nav>
+  <header class="text-center py-4 bg-light">
+    <h1>歡迎來到 Travel 旅遊網</h1>
+    <p>您的夢想假期從這裡開始</p>
+  </header>
 
-    <div style=" width: 70%; margin: 0 auto 30px auto;">
-        <p style="font-size: 20px;font-weight: bold;border-bottom: 1px black solid; color: rgb(220,100,0);">出發日期</p>
-        <div style="display: flex;">
-            <div
-                style="background-color: rgb(230,230,230); width: 100px;height: 100px; display: flex;justify-content: center;align-items: center;font-size: 30px;">
-                6月
-            </div>
-            <div
-                style="background-color: white; width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                <span style="color: blue;">6/27(五)</span>
-                <span style="font-size: 17px;">$20,888</span>
-                <span style="color: rgb(200,200,200); font-size: 15px;">候補5</span>
-            </div>
-            <div
-                style="background-color: rgb(230,230,230); width: 100px;height: 100px; display: flex;justify-content: center;align-items: center;font-size: 30px;">
-                7月
-            </div>
-            <div
-                style="background-color: white; width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                <span style="color: blue;">7/11(五)</span>
-                <span style="font-size: 17px;">$25,888</span>
-                <span style="color: rgb(200,200,200); font-size: 15px;">可售27</span>
-            </div>
-            <div
-                style="background-color: white; width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                <span style="color: blue;">7/18(五)</span>
-                <span style="font-size: 17px;">$25,888</span>
-                <span style="color: rgb(200,200,200); font-size: 15px;">可售27</span>
-            </div>
-            <div
-                style="background-color: white; width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                <span style="color: blue;">7/19(六)</span>
-                <span style="font-size: 17px;">$25,888</span>
-                <span style="color: rgb(200,200,200); font-size: 15px;">可售27</span>
-            </div>
-            <div
-                style=" background-color: white;width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                <span style="color: blue;">7/22(二)</span>
-                <span style="font-size: 17px;">$24,888</span>
-                <span style="color: rgb(200,200,200); font-size: 15px;">可售21</span>
-            </div>
-            <div
-                style=" background-color: white;width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-            </div>
-            <div
-                style=" background-color: white;width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-            </div>
-            <div
-                style="background-color: white; width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                <span
-                    style="color: rgb(0,200,200); font-size:15px ; margin-top: auto; margin-bottom: 20px;">...更多日期</span>
-            </div>
+  <nav class="bg-warning py-2 text-center">
+    <a href="index.html" class="mx-2 fw-bold text-dark text-decoration-none">首頁</a>
+    <a href="Link.html" class="mx-2 fw-bold text-dark text-decoration-none">行程介紹</a>
+    <a href="Hot.html" class="mx-2 fw-bold text-dark text-decoration-none">熱門景點</a>
+    <a href="#" class="mx-2 fw-bold text-dark text-decoration-none">自由行</a>
+    <a href="#" class="mx-2 fw-bold text-dark text-decoration-none">聯絡我們</a>
+  </nav>
 
+  <main class="container my-4">
+    <section class="mb-4">
+      <h2 class="fs-5 fw-bold border-bottom border-dark text-warning">出發日期</h2>
+      <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-2 text-center">
+        <div class="bg-secondary text-white py-4 fs-4">6月</div>
+        <div class="bg-white border py-2">
+          <span class="text-primary">6/27(五)</span><br>
+          <span>$20,888</span><br>
+          <span class="text-muted small">候補5</span>
         </div>
-
-        <p style="font-size: 20px;font-weight: bold;border-bottom: 1px black solid; color: rgb(220,100,0);">行程特色</p>
-        <div style="background-color: white;">
-            <p style="color: blue; margin-bottom: 0px;">麻辣重慶美食巡禮</p>
-            <span style="font-size: 15px;">從地道的老火鍋、辣子雞、酸辣粉，到夜市小吃，一次吃遍重慶味蕾！</span>
-
-            <p style="color: blue; margin-bottom: 0px;">洪崖洞夜景 · 穿越千年山城</p>
-            <span style="font-size: 15px;">漫步在傳統吊腳樓風格的洪崖洞，感受古今交錯的山城魅力，夜晚燈火輝映如夢如幻。</span>
-
-            <p style=" color: blue; margin-bottom: 0px;">輕軌穿樓 · 城市奇景</p>
-            <span style="font-size: 15px;">搭乘網紅輕軌 2 號線，體驗列車穿越大樓的奇幻旅程，打卡熱門 IG 景點！</span>
-
-            <p style="color: blue; margin-bottom: 0px;">武隆天生三橋 · 世界自然遺產</p>
-            <span style="font-size: 15px;">親臨《變形金剛4》取景地，壯麗的喀斯特地貌讓人讚嘆大自然的鬼斧神工。</span>
-
-            <p style=" color: blue; margin-bottom: 0px;">長江索道 · 高空看重慶</p>
-            <span style="font-size: 15px;">搭乘「萬人空巷」的空中纜車橫跨長江，飽覽兩岸風光，一睹重慶「空中公交」的震撼！</span>
+        <div class="bg-secondary text-white py-4 fs-4">7月</div>
+        <div class="bg-white border py-2">
+          <span class="text-primary">7/11(五)</span><br>
+          <span>$25,888</span><br>
+          <span class="text-muted small">可售27</span>
         </div>
-
-        <p style="font-size: 20px;font-weight: bold;border-bottom: 1px black solid; color: rgb(220,100,0);">每日安排</p>
-        <div style="background-color: white;">
-            <div style="display: flex; align-items: center;">
-                <span style="font-size: 30px; font-weight: bold; color: blueviolet;">D1</span>
-                <span style="margin-left: 10px; border-bottom: 1px dashed gray;">
-                    台灣/重慶
-                    <span style="color: gray; margin: 0 10px 0 10px;">&gt;</span>
-                    麻辣美食之旅
-                    <span style="color: gray; margin: 0 10px 0 10px;">&gt;</span>
-                    旅館
-                </span>
-            </div>
-            <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                <span><img src="Images/eat.jpg" alt="餐點"></span>
-
-                <span
-                    style="margin-left: 10px; border-bottom: 1px dashed gray; display: flex; align-items: center; gap: 5px;">
-                    <span
-                        style="background-color: rgb(230,230,230); width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px;">早</span>
-                    <span
-                        style="height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px; margin-right: 10px;">機上餐</span>
-                    <span
-                        style="background-color: rgb(230,230,230); width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px;">午</span>
-                    <span
-                        style="height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px; margin-right: 10px;">敬啟自理</span>
-                    <span
-                        style="background-color: rgb(230,230,230); width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px;">晚</span>
-                    <span
-                        style="height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px; margin-right: 10px;">敬啟自理</span>
-                </span>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-                <span style="font-size: 30px; font-weight: bold; color: blueviolet;">D2</span>
-                <span style="margin-left: 10px; border-bottom: 1px dashed gray;">
-                    旅館
-                    <span style="color: gray; margin: 0 10px 0 10px;">&gt;</span>
-                    洪崖洞
-                    <span style="color: gray; margin: 0 10px 0 10px;">&gt;</span>
-                    千年山城
-                    <span style="color: gray; margin: 0 10px 0 10px;">&gt;</span>
-                    旅館
-                </span>
-            </div>
-            <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                <span><img src="Images/eat.jpg" alt="餐點"></span>
-
-                <span
-                    style="margin-left: 10px; border-bottom: 1px dashed gray; display: flex; align-items: center; gap: 5px;">
-                    <span
-                        style="background-color: rgb(230,230,230); width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px;">早</span>
-                    <span
-                        style="height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px; margin-right: 10px;">敬啟自理</span>
-                    <span
-                        style="background-color: rgb(230,230,230); width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px;">午</span>
-                    <span
-                        style="height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px; margin-right: 10px;">敬啟自理</span>
-                    <span
-                        style="background-color: rgb(230,230,230); width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px;">晚</span>
-                    <span
-                        style="height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px; margin-right: 10px;">敬啟自理</span>
-                </span>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-                <span style="font-size: 30px; font-weight: bold; color: blueviolet;">D3</span>
-                <span style="margin-left: 10px; border-bottom: 1px dashed gray;">
-                    旅館
-                    <span style="color: gray; margin: 0 10px 0 10px;">&gt;</span>
-                    都市
-                    <span style="color: gray; margin: 0 10px 0 10px;">&gt;</span>
-                    天生三橋
-                    <span style="color: gray; margin: 0 10px 0 10px;">&gt;</span>
-                    旅館
-                </span>
-            </div>
-            <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                <span><img src="Images/eat.jpg" alt="餐點"></span>
-
-                <span
-                    style="margin-left: 10px; border-bottom: 1px dashed gray; display: flex; align-items: center; gap: 5px;">
-                    <span
-                        style="background-color: rgb(230,230,230); width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px;">早</span>
-                    <span
-                        style="height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px; margin-right: 10px;">敬啟自理</span>
-                    <span
-                        style="background-color: rgb(230,230,230); width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px;">午</span>
-                    <span
-                        style="height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px; margin-right: 10px;">敬啟自理</span>
-                    <span
-                        style="background-color: rgb(230,230,230); width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px;">晚</span>
-                    <span
-                        style="height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px; margin-right: 10px;">敬啟自理</span>
-                </span>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-                <span style="font-size: 30px; font-weight: bold; color: blueviolet;">D4</span>
-                <span style="margin-left: 10px; border-bottom: 1px dashed gray;">
-                    旅館
-                    <span style="color: gray; margin: 0 10px 0 10px;">&gt;</span>
-                    長江索道
-                    <span style="color: gray; margin: 0 10px 0 10px;">&gt;</span>
-                    麻辣美食之旅
-                    <span style="color: gray; margin: 0 10px 0 10px;">&gt;</span>
-                    重慶/台灣
-                </span>
-            </div>
-            <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                <span><img src="Images/eat.jpg" alt="餐點"></span>
-
-                <span
-                    style="margin-left: 10px; border-bottom: 1px dashed gray; display: flex; align-items: center; gap: 5px;">
-                    <span
-                        style="background-color: rgb(230,230,230); width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px;">早</span>
-                    <span
-                        style="height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px; margin-right: 10px;">敬啟自理</span>
-                    <span
-                        style="background-color: rgb(230,230,230); width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px;">午</span>
-                    <span
-                        style="height: 30px; display: flex; justify-content: center; align-items: center; font-size: 15px; margin-right: 10px;">機上餐</span>
-                </span>
-            </div>
-
-            <img src="Images/GoDateList.jpg" alt="可樂旅遊畫面截圖">
+        <div class="bg-white border py-2">
+          <span class="text-primary">7/18(五)</span><br>
+          <span>$25,888</span><br>
+          <span class="text-muted small">可售27</span>
         </div>
-
-        <p style="font-size: 20px;font-weight: bold;border-bottom: 1px black solid; color: rgb(220,100,0);">訂購須知</p>
-        <div style="background-color: white;">
-            <div>
-                <p style=" color: blue; margin-bottom: 0px;">一、報名與付款</p>
-                <li>訂購完成後，本公司將於 1～2 個工作天內與您聯繫確認行程。</li>
-                <li>請於報名後 3 日內完成訂金支付（每人 NT$5,000），以保留名額。</li>
-                <li>出發前 14 日需完成尾款付款，逾期視同放棄資格。</li>
-            </div>
-            <div>
-                <p style=" color: blue; margin-bottom: 0px;">二、取消與退費辦法（依觀光局規範）</p>
-                <li>出發前 41 天以上取消：退回已付全額。</li>
-                <li>出發前 21～40 天取消：扣除團費 10%。</li>
-                <li>出發前 11～20 天取消：扣除團費 20%。</li>
-                <li>出發前 4～10 天取消：扣除團費 30%。</li>
-                <li>出發前 1～3 天取消：扣除團費 70%。</li>
-                <li>出發當天或未通知未到：全額不退。</li>
-            </div>
-            <div>
-                <p style=" color: blue; margin-bottom: 0px;">三、旅客責任</p>
-                <li>請確保護照有效期限至少六個月以上（若適用）。</li>
-                <li>如需開立公司統編發票，請於報名時提供資訊。</li>
-                <li>若因個人因素無法成行，費用需依上述退費規定辦理。</li>
-            </div>
-            <div>
-                <p style=" color: blue; margin-bottom: 0px;">四、其他注意事項</p>
-                <li>本公司保有因氣候、不可抗力因素調整行程之權利。</li>
-                <li>行程最低成團人數：16 人，未達人數將全額退費。</li>
-                <li>團體旅遊需統一行動，不可任意脫隊。</li>
-            </div>
+        <div class="bg-white border py-2">
+          <span class="text-primary">7/19(六)</span><br>
+          <span>$25,888</span><br>
+          <span class="text-muted small">可售27</span>
         </div>
-    </div>
+        <div class="bg-white border py-2">
+          <span class="text-primary">7/22(二)</span><br>
+          <span>$24,888</span><br>
+          <span class="text-muted small">可售21</span>
+        </div>
+        <div class="bg-white border py-2"></div>
+        <div class="bg-white border py-2"></div>
+        <div class="bg-white border py-2">
+          <span class="text-info small">...更多日期</span>
+        </div>
+      </div>
+    </section>
 
+    <section class="mb-4">
+      <h2 class="fs-5 fw-bold border-bottom border-dark text-warning">行程特色</h2>
+      <ul class="list-unstyled">
+        <li><span class="text-primary fw-bold">麻辣重慶美食巡禮：</span>從地道的老火鍋、辣子雞、酸辣粉，到夜市小吃，一次吃遍重慶味蕾！</li>
+        <li><span class="text-primary fw-bold">洪崖洞夜景 · 穿越千年山城：</span>漫步在傳統吊腳樓風格的洪崖洞，感受古今交錯的山城魅力，夜晚燈火輝映如夢如幻。</li>
+        <li><span class="text-primary fw-bold">輕軌穿樓 · 城市奇景：</span>搭乘網紅輕軌 2 號線，體驗列車穿越大樓的奇幻旅程，打卡熱門 IG 景點！</li>
+        <li><span class="text-primary fw-bold">武隆天生三橋 · 世界自然遺產：</span>親臨《變形金剛4》取景地，壯麗的喀斯特地貌讓人讚嘆大自然的鬼斧神工。</li>
+        <li><span class="text-primary fw-bold">長江索道 · 高空看重慶：</span>搭乘空中纜車橫跨長江，飽覽兩岸風光，一睹重慶空中公交的震撼！</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="fs-5 fw-bold border-bottom border-dark text-warning">每日安排</h2>
+      <!-- 建議將每日安排拆成 loop 渲染或 Bootstrap accordion，略 -->
+      <img src="Images/GoDateList.jpg" alt="可樂旅遊畫面截圖" class="img-fluid mt-3">
+    </section>
+
+    <section>
+      <h2 class="fs-5 fw-bold border-bottom border-dark text-warning">訂購須知</h2>
+      <ul>
+        <li><strong class="text-primary">報名與付款：</strong>訂購完成後，將於 1～2 個工作天內聯繫確認行程。報名後 3 日內完成訂金支付（每人 NT$5,000），14 日前需完成尾款。</li>
+        <li><strong class="text-primary">取消與退費：</strong>依觀光局規範，出發前 41 天以上可全退，3 天內取消全額不退。</li>
+        <li><strong class="text-primary">旅客責任：</strong>請確保護照六個月效期，若需統編發票請事先提供資訊。</li>
+        <li><strong class="text-primary">其他事項：</strong>行程可能因天候或人數不足調整，最低成團人數 16 人，否則全額退費。</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
