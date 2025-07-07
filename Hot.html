@@ -1,84 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>熱門景點</title>
-    <link rel="stylesheet" href="CSS/title.css">
-    <link rel="stylesheet" href="CSS/hot.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>熱門景點</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/title.css">
+  <style>
+    @media (max-width: 768px) {
+      .card {
+        width: 100% !important;
+      }
+    }
+
+    .package-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .package-cards .card {
+      width: 30%;
+    }
+
+    @media (max-width: 992px) {
+      .package-cards .card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .package-cards .card {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h1>歡迎來到 Travel 旅遊網</h1>
-        <p>您的夢想假期從這裡開始</p>
-    </header>
-	<nav class="bg-warning py-2 text-center">
-		<a href="index.html" class="mx-2 fw-bold text-dark text-decoration-none">首頁</a>
-		<a href="Link.html" class="mx-2 fw-bold text-dark text-decoration-none">行程介紹</a>
-		<a href="Hot.html" class="mx-2 fw-bold text-dark text-decoration-none">熱門景點</a>
-		<a href="#" class="mx-2 fw-bold text-dark text-decoration-none">自由行</a>
-		<a href="#" class="mx-2 fw-bold text-dark text-decoration-none">聯絡我們</a>
-    </nav>
+  <header class="text-center py-4 bg-light">
+    <h1>歡迎來到 Travel 旅遊網</h1>
+    <p>您的夢想假期從這裡開始</p>
+  </header>
 
-	<div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
-		<a href="Link.html" class="card text-decoration-none text-dark" style="width: 30%;">
-			<img src="Images/227477_0.jpg" alt="日本行程" style="width: 100%;">
-			<div class="package-content">
-			<h3>絕美北疆十三日遊</h3>
-			<p>活動說明: DDD</p>
-			<p><strong>NT$ 87,900 起</strong></p>
-			</div>
-		</a>
-		
-		<a href="Link.html" class="card text-decoration-none text-dark" style="width: 30%;">
-			<img src="Images/227478_0.jpg" alt="峇里島行程" style="width: 100%;">
-			<div class="package-content">
-			<h3>桂林逍遙遊六天</h3>
-			<p>活動說明: EEE</p>
-			<p><strong>NT$ 19,900 起</strong></p>
-			</div>
-		</a>
-		
-		<a href="Link.html" class="card text-decoration-none text-dark" style="width: 30%;">
-			<img src="Images/227479_0.jpg" alt="歐洲行程" style="width: 100%;">
-			<div class="package-content">
-			<h3>重慶渝你八日遊</h3>
-			<p>活動說明: FFF</p>
-			<p><strong>NT$ 34,900 起</strong></p>
-			</div>
-		</a>
-	</div>
+  <nav class="bg-warning py-2 text-center">
+    <a href="index.html" class="mx-2 fw-bold text-dark text-decoration-none">首頁</a>
+    <a href="Link.html" class="mx-2 fw-bold text-dark text-decoration-none">行程介紹</a>
+    <a href="Hot.html" class="mx-2 fw-bold text-dark text-decoration-none">熱門景點</a>
+    <a href="#" class="mx-2 fw-bold text-dark text-decoration-none">自由行</a>
+    <a href="#" class="mx-2 fw-bold text-dark text-decoration-none">聯絡我們</a>
+  </nav>
 
-	<div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
-		<a href="Link.html" class="card text-decoration-none text-dark" style="width: 30%;">
-			<img src="Images/227477_0.jpg" alt="日本行程" style="width: 100%;">
-			<div class="package-content">
-			<h3>絕美北疆十三日遊</h3>
-			<p>活動說明: DDD</p>
-			<p><strong>NT$ 87,900 起</strong></p>
-			</div>
-		</a>
-		
-		<a href="Link.html" class="card text-decoration-none text-dark" style="width: 30%;">
-			<img src="Images/227478_0.jpg" alt="峇里島行程" style="width: 100%;">
-			<div class="package-content">
-			<h3>桂林逍遙遊六天</h3>
-			<p>活動說明: EEE</p>
-			<p><strong>NT$ 19,900 起</strong></p>
-			</div>
-		</a>
-		
-		<a href="Link.html" class="card text-decoration-none text-dark" style="width: 30%;">
-			<img src="Images/227479_0.jpg" alt="歐洲行程" style="width: 100%;">
-			<div class="package-content">
-			<h3>重慶渝你八日遊</h3>
-			<p>活動說明: FFF</p>
-			<p><strong>NT$ 34,900 起</strong></p>
-			</div>
-		</a>
-	</div>
+  <main class="container my-4">
+    <h2 class="fs-5 fw-bold border-bottom border-dark text-warning mb-4">熱門景點</h2>
+
+    <div class="package-cards">
+      <a href="Link.html" class="card text-decoration-none text-dark">
+        <img src="Images/227477_0.jpg" alt="日本行程" class="card-img-top">
+        <div class="card-body">
+          <h3 class="card-title">絕美北疆十三日遊</h3>
+          <p class="card-text">活動說明: DDD</p>
+          <p class="card-text"><strong>NT$ 87,900 起</strong></p>
+        </div>
+      </a>
+      <a href="Link.html" class="card text-decoration-none text-dark">
+        <img src="Images/227478_0.jpg" alt="峇里島行程" class="card-img-top">
+        <div class="card-body">
+          <h3 class="card-title">桂林逍遙遊六天</h3>
+          <p class="card-text">活動說明: EEE</p>
+          <p class="card-text"><strong>NT$ 19,900 起</strong></p>
+        </div>
+      </a>
+      <a href="Link.html" class="card text-decoration-none text-dark">
+        <img src="Images/227479_0.jpg" alt="歐洲行程" class="card-img-top">
+        <div class="card-body">
+          <h3 class="card-title">重慶渝你八日遊</h3>
+          <p class="card-text">活動說明: FFF</p>
+          <p class="card-text"><strong>NT$ 34,900 起</strong></p>
+        </div>
+      </a>
+      <a href="Link.html" class="card text-decoration-none text-dark">
+        <img src="Images/227477_0.jpg" alt="日本行程" class="card-img-top">
+        <div class="card-body">
+          <h3 class="card-title">絕美北疆十三日遊</h3>
+          <p class="card-text">活動說明: DDD</p>
+          <p class="card-text"><strong>NT$ 87,900 起</strong></p>
+        </div>
+      </a>
+      <a href="Link.html" class="card text-decoration-none text-dark">
+        <img src="Images/227478_0.jpg" alt="峇里島行程" class="card-img-top">
+        <div class="card-body">
+          <h3 class="card-title">桂林逍遙遊六天</h3>
+          <p class="card-text">活動說明: EEE</p>
+          <p class="card-text"><strong>NT$ 19,900 起</strong></p>
+        </div>
+      </a>
+      <a href="Link.html" class="card text-decoration-none text-dark">
+        <img src="Images/227479_0.jpg" alt="歐洲行程" class="card-img-top">
+        <div class="card-body">
+          <h3 class="card-title">重慶渝你八日遊</h3>
+          <p class="card-text">活動說明: FFF</p>
+          <p class="card-text"><strong>NT$ 34,900 起</strong></p>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
